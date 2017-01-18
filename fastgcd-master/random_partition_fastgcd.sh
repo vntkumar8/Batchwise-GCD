@@ -9,7 +9,7 @@ for i in `seq 1 9`;
 do
 
 	shuf dataset > f
-	split -n 2 f f2.
+	split -l 976743 f f2.
 
 	./fastgcd f2.aa
 	mv vulnerable_moduli f2.aa.vulnerable_moduli
@@ -27,7 +27,7 @@ for i in `seq 1 9`;
 do
 
 	shuf dataset > f
-	split -n 4 f f4.
+	split -l 488371 f f4.
 
 	./fastgcd f4.aa
 	mv vulnerable_moduli f4.aa.vulnerable_moduli
@@ -51,7 +51,7 @@ for i in `seq 1 9`;
 do
 
 	shuf dataset > f
-	split -n 8 f f8.
+	split -l 244185 f f8.
 
     ./fastgcd f8.aa
     mv vulnerable_moduli f8.aa.vulnerable_moduli
@@ -89,7 +89,7 @@ for i in `seq 1 9`;
 do
 
 	shuf dataset > f
-	split -n 16 f f16.
+	split -l 122092 f f16.
 
 	./fastgcd f16.aa
     mv vulnerable_moduli f16.aa.vulnerable_moduli
@@ -150,7 +150,7 @@ for i in `seq 1 9`;
 do
 
 	shuf dataset > f
-	split -n 32 f f32.
+	split -l 61046 f f32.
 
 	./fastgcd f32.aa
 	mv vulnerable_moduli f32.aa.vulnerable_moduli
@@ -253,3 +253,4 @@ do
 	mv f32.*.vulnerable_moduli 32.$i
 	mv f32.*.gcds 32.$i
 done
+
